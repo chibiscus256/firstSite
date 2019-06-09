@@ -1,0 +1,330 @@
+* {
+    font-family: Lobster, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.pic{
+    background: url(../img/background2_1920.png) no-repeat scroll;
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    z-index: -2;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    transition: opacity 6s;
+    min-height: 100vh;
+    font-family: Lobster, sans-serif;
+    overflow: hidden;
+}
+
+body {
+    background-repeat: no-repeat;
+}
+
+.container{
+    width: 80%;
+    max-width: 1300px;
+    margin: 0 auto;
+    background: #bb6ab2;
+    text-align: justify-all;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    opacity: 0.93;
+    justify-content: center;
+    flex-direction: row;
+}
+
+/*=================================================FRONT PAGE===========================================*/
+
+.frontage{
+    font-size: 22pt;
+    color: #adb20b;
+    flex-direction: column;
+    margin-bottom: 15%;
+    width: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top:10%;
+}
+
+.frontage img{
+    display: block;
+    margin: 0 auto;
+}
+
+.frontage span{
+    display: block;
+}
+
+/*==================================================BUTTON====================================================*/
+
+.button{
+    background: #16638d;
+    color: #362336;
+    border-radius: 50px;
+    width: 70%;
+    padding: 20px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 44px;
+    font-weight: bold;
+    letter-spacing: 3vh;
+    margin-top: 30px;
+    margin-bottom: 10%;
+}
+
+.buttonContainer{
+    display: flex;
+    align-items: center;
+    opacity: 0.8;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*=================================================THINGS I LIKE================================================*/
+
+#slide {
+    opacity: 1;
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: 5% auto;
+    margin-top: 2%;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-self: center;
+}
+
+.svg{
+    width: 50px;
+    height: 50px;
+    align-self: center;
+}
+
+#images {
+    margin:20px auto;
+    width: 100%;
+    height: 70vh;
+    border: 2px solid black;
+    border-radius:10px;
+}
+
+/*=====================================================section 1==================================================*/
+
+.leftright{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100vw;
+    font-size: 22pt;
+}
+
+.pasteBioLeft{
+    color: #f7f7f7;
+    flex-direction: column;
+    display: block;
+    align-self: flex-start;
+    text-align: left;
+    margin: 3%;
+    width: 45%;
+}
+
+.pasteBioRight{
+    color: #f7f7f7;
+    flex-direction: column;
+    text-align: right;
+    margin: 3%;
+    width: 45%;
+    display: flex;
+    align-self: flex-end;
+    align-items: flex-end;
+}
+.pasteRight{
+    max-width: 350px;
+    display: block;
+    }
+
+.pasteLeft{
+    max-width: 420px;
+    min-width: 400px;
+}
+
+.container span{
+    display: block;
+    text-align: center;
+    width: 100%;
+    }
+
+h1{
+    font-size: 30pt;
+    font-family: Anime Ace, fantasy;
+    color: #9b073b;
+    margin: 5% 0%;
+    text-align: center;
+    width: 80%;
+}
+
+/*=============================================THINGS I DO NOT LIKE=========================================*/
+
+.thingsIDoNotLikeContainer{
+    display: flex;
+    align-items: center;
+    opacity: 0.8;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin: 0%;
+    align-self: center;
+}
+
+.thingsIDoNotLikeContainer img{
+    width: 100%;
+}
+
+/*===============================================WALLPAPERS SECTION=========================================*/
+
+.wallpapers{
+    max-width:100%;
+    }
+
+.wallp{
+    position: relative;
+}
+
+.wallpapers img{
+    width: 100%;
+}
+
+.wallpapers a{
+    position: absolute;
+    display: block;
+    width: 25%;
+    color: #29c968;
+    bottom: 22%;
+    left: 43%;
+    font-size: 28pt;
+    z-index: 1;
+    text-decoration: none;
+}
+
+.link2 a{
+    position: absolute;
+    display: block;
+    width: 16%;
+    color: #f33644;
+    bottom: 11%;
+    left: 82%;
+    right: 0%;
+    font-size: 22pt;
+    z-index: 1;
+    text-decoration: none;
+    text-align: center;
+    }
+
+.link1 a{
+    position: absolute;
+    display: block;
+    width: 30%;
+    color: #f8c007;
+    bottom: 7%;
+    left: 33%;
+    font-size: 26pt;
+    z-index: 1;
+    text-decoration: none;
+}
+/*=====================================================FOOTER============================================= */
+
+.title h2{
+    font-size: 30pt;
+    color: #adb20b;
+    font-family: Lobster, sans-serif;
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.title:last-child{
+    align-items: flex-start;
+}
+
+.folksAndPets{
+    width: 25%;
+    text-align: center;
+    margin: 2.9%;
+}
+
+@media (max-width: 950px) {
+    .folksAndPets{
+        width: 44%;
+    }
+    .title{
+        justify-content: space-around;
+    }
+}
+
+.folksAndPets characterDescription{
+    font-size: 16pt;
+    color: #f7f7f7;
+    font-family: Lobster, sans-serif;
+    text-align: inherit;
+}
+
+.folksAndPets img{
+    width: 100%;
+}
+
+/*===============================================NAVIGATION =============================================== */
+.navigation{
+    height: 13vh;
+    display: flex;
+    align-items: center;
+    opacity: 0.8;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin: 0%;
+    align-self: center;
+}
+
+.navigation li{
+    display: block;
+    align-self: center;
+    margin: 1%;
+    width: 100%;
+    text-align: center;
+}
+
+.navigation li a{
+    display: block;
+    color: #9b073b;
+    font-family: Anime Ace, fantasy;
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.nav{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
